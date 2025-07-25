@@ -1,0 +1,15 @@
+{
+  "name": "lut_full-stack",
+  "version": "1.0.0",
+  "description": "Full Stack Course",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch --env-file=.env server2.js"
+  },
+  "author": "Leevi Laitala",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

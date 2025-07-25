@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "text": "Clean apartment",
+            "date": "2025-08-01",
+            "reminder": true
+        },
+        {
+            "id": 2,
+            "text": "Get groceries",
+            "date": "2025-07-25",
+            "reminder": false
+        },
+        {
+            "id": 3,
+            "text": "Course deadline",
+            "date": "2025-07-31",
+            "reminder": true
+        },
+        {
+            "id": 4,
+            "text": "Go to drug store",
+            "date": "2025-08-02",
+            "reminder": false
+        }
+    ]
+}
