@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../components/Spinner";
-import { getFeed, reset } from "../features/posts/postSlice";
+import { getFeed } from "../features/posts/postSlice";
 
 import PostItem from "../components/PostItem";
 import PostForm from "../components/PostForm";
@@ -21,9 +21,6 @@ function Feed() {
 
         dispatch(getFeed());
 
-        //return () => {
-        //    dispatch(reset());
-        //};
     }, [user, navigate, isError, message, dispatch]);
 
     if (isLoading) {

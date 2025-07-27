@@ -8,7 +8,6 @@ function CommentItem({ comment }) {
                 <p>{comment.user} at {dateStr}</p>
             </div>
             <h2>{comment.text}</h2>
-            <h2>{comment.votes}</h2>
         </div>
     )
 }

@@ -37,7 +37,7 @@ const getPost = async (postId, token) => {
         },
     };
 
-    const response = await axios.get(API_URL + "/post/" + postId, config);
+    const response = await axios.get(API_URL + "post/" + postId, config);
 
     return response.data;
 };

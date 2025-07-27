@@ -21,8 +21,7 @@ const createComment = asyncHandler(async (req, res) => {
         votes: 0,
     });
 
-    const joo = await Post.findByIdAndUpdate(req.params.id, { activity: Date.now() }, { new: true });
-    console.log(joo);
+    await Post.findByIdAndUpdate(req.params.id, { activity: Date.now() }, { new: true });
 
     res.status(200).send(comment);
 });
