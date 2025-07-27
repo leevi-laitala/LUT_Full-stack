@@ -23,9 +23,9 @@ App requires a MongoDB instance be running on the local machine. The database du
 URI of the mongodb is defined in `.env` file in the project root, by default is set to `localhost:27017` 
 
 ```
-$ mkdir db
+$ docker volume create mernapp-db
 $ docker pull mongodb/mongodb-community-server:7.0-ubi8
-$ docker run --name mongodb -d -p 27017:27017 -v "./db:/data/db" mongodb/mongodb-community-server:7.0-ubi8 --noauth
+$ docker run --name mongodb -d -p 27017:27017 -v "mernapp-db:/data/db" mongodb/mongodb-community-server:7.0-ubi8 --noauth
 $ mongorestore --db mernapp --archive=db.backup --gzip
 ```
 
